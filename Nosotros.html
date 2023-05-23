@@ -1,0 +1,265 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Estilo/index.css">
+    <title>Nosotros</title>
+	<style>
+		{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		}
+		body{
+		background-color: gray;
+		}
+		
+		
+		/* Estilos para la cabecera */
+			
+			header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px;
+				background-color: #f8f8f8;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+		
+			.logo img{
+				display: flex;
+				align-items: center;
+				font-size: 24px;
+				font-weight: bold;
+				text-transform: uppercase;
+				width: 150px
+			}
+			
+			.menu {
+				display: flex;
+				align-items: center;
+			}
+
+			.menu a {
+				margin: 0 10px;
+				text-decoration: none;
+				color: #333;
+			}
+
+			.productos {
+				display: flex;
+				align-items: center;
+			}
+
+			.productos input[type="text"] {
+				border: none;
+				padding: 8px;
+				margin-right: 10px;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+
+			.productos input[type="submit"] {
+				background-color: #333;
+				color: #fff;
+				border: none;
+				padding: 8px 16px;
+				font-size: 14px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+	
+			.inicio-sesion {
+				display: flex;
+				align-items: center;
+			}
+
+			.inicio-sesion a {
+				margin-right: 10px;
+				text-decoration: none;
+				color: #333;
+			}
+
+			.inicio-sesion button {
+				background-color: #333;
+				border: none;
+				padding: 8px 16px;
+				font-size: 14px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.inicio-sesion button a {
+				color: #fff;
+				}
+				
+		.logo{
+		width: 100px;
+		height: 90px;
+ 
+		}
+		.bx{
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+
+		}
+		.buscador{
+		display: flex;
+		align-items: center;
+		position: relative;
+		}
+		.panelBusqueda{
+		background-color: aquamarine;
+		height: 50px;
+		width: 800px;
+
+		}
+
+		.bx-search-alt-2{
+		position: absolute;
+		margin-left: 5px;
+		}
+		.bx-cart{
+		position: relative;
+		right: 0px;
+
+		}
+		.textoFrase{
+		font-size: 50px;
+		color: rgb(90, 184, 235);
+		text-transform: uppercase;
+		text-align: center;
+		}
+
+		.frase{
+		background-color: rgb(212, 202, 202);
+		padding: 15px 0;
+		}
+
+		.objetivos{
+		display: flex;
+		background-color: white;
+		height: 50%;
+		}
+		.objetivos div{
+		width: 50%;
+		padding: 0 15px;
+		text-align: center;
+		background-color: white;
+		font-size: 20px;
+		border: 4px rebeccapurple solid;
+		}
+		/* Estilos para el footer */
+			footer {
+				background-color: #f2f2f2;
+				padding: 20px;
+				margin-top: 50px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.social-icons {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+
+			.social-icons a img {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background-color: #333;
+				color: #fff;
+				font-size: 20px;
+				border-radius: 50%;
+				margin: 0 10px;
+				line-height: 30px;
+				text-align: center;
+			}
+
+			.terms {
+				margin-bottom: 10px;
+			}
+</style>
+</head>
+<body>
+    <div class="contendorPadre">
+        <header>
+			<div class="logo">
+				<img src="Imagenes/logo.png">
+			</div>
+
+			<div class="menu">
+				<a href="inicio.html">Inicio</a>
+				<a href="Nosotros.html">Nosotros</a>
+			</div>
+			
+			<div class="productos">
+				<form>
+					<input type="text" placeholder="Buscar productos...">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+			
+			<div class="inicio-sesion">
+				<a href="InicioSesion.html">Iniciar sesi&oacute;n</a>
+				<button><a href="Registro.html">Registrarse</a></button>
+				<button><a href="carrito_de_compras.html">Mis Compras</a></button>
+			</div>
+		</header>
+
+
+        <div class="frase">
+            <h4 class="textoFrase">Las marcas más poderosas y duraderas son las que permanecen en los corazones de las personas</h4>
+        </div>
+
+
+        <div class="video">
+            <video controls width="100%" height ="500px">
+                <source src="videoss/videoLAP.mp4">
+                </source>
+            </video>
+        </div>
+
+
+        <div class="objetivos">
+            <div class="mision">
+                <p class="objetivoTexto">
+                    <ul>
+						<li><a href="imagenes/index.html">MISION</a></li>   
+					</ul>
+                    En TECHONIC nos dedicamos a proporcionar soluciones de tecnología innovadoras y de calidad que permitan a nuestros clientes maximizar su potencial en el mundo digital.Nos esforzamos por brindar productos y servicios de la más alta calidad y ofrecer una experiencia de compra excepcional a nuestros clientes
+                </p>
+            </div>
+            <div class="vision" >
+                <p class="objetivoTexto">
+                    <ul>
+						<li><a href="imagenes/index.html">VISION</a></li>   
+					</ul>
+                    En TECHTONIC, nos esforzamos por ser líderes en la industria de la tecnología, ofreciendo una amplia gama de productos y servicios que satisfagan las necesidades cambiantes de nuestros clientes. Nos esforzamos por ser una empresa innovadora, en constante evolución, y comprometida con la excelencia en todas las áreas de nuestro negocio. Nuestra visión es ser reconocidos como el principal destino para la tecnología de vanguardia y el servicio excepcional al cliente
+                </p>
+            </div>
+        </div>
+		<footer>
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-facebook"></i><img src="imagenes/facebook.png"></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i><img src="imagenes/instagram.png"></a>
+				<a href="#"><i class="fa fa-youtube"></i></a>
+			</div>
+
+			<div class="terms">
+				<a href="#">Términos y condiciones</a> | <a href="#">Nuestras políticas</a>
+			</div>
+			<p>&copy; TECHTONIC 2023 Todos los derechos reservados. Designed by LEDS</p>
+		</footer>
+   </div>
+
+</body>
+</html>

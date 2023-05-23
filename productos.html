@@ -1,0 +1,252 @@
+<html>
+	<head>
+		<title>Productos</title>
+		<style>
+		/* Estilos para la cabecera */
+			
+			header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px;
+				background-color: #f8f8f8;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+		
+			.logo img{
+				display: flex;
+				align-items: center;
+				font-size: 24px;
+				font-weight: bold;
+				text-transform: uppercase;
+				width: 150px
+			}
+			
+			.menu {
+				display: flex;
+				align-items: center;
+			}
+
+			.menu a {
+				margin: 0 10px;
+				text-decoration: none;
+				color: #333;
+			}
+
+			.productos {
+				display: flex;
+				align-items: center;
+			}
+
+			.productos input[type="text"] {
+				border: none;
+				padding: 8px;
+				margin-right: 10px;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+
+			.productos input[type="submit"] {
+				background-color: #333;
+				color: #fff;
+				border: none;
+				padding: 8px 16px;
+				font-size: 14px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+	
+			.inicio-sesion {
+				display: flex;
+				align-items: center;
+			}
+
+			.inicio-sesion a {
+				margin-right: 10px;
+				text-decoration: none;
+				color: #333;
+			}
+
+			.inicio-sesion button {
+				background-color: #333;
+				border: none;
+				padding: 8px 16px;
+				font-size: 14px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.inicio-sesion button a {
+				color: #fff;
+				}
+		/* Estilos para el footer */
+			footer {
+				background-color: #f2f2f2;
+				padding: 20px;
+				margin-top: 50px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.social-icons {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+
+			.social-icons a img {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background-color: #333;
+				color: #fff;
+				font-size: 20px;
+				border-radius: 50%;
+				margin: 0 10px;
+				line-height: 30px;
+				text-align: center;
+			}
+
+			.terms {
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="Imagenes/logo.png">
+			</div>
+
+			<div class="menu">
+				<a href="inicio.html">Inicio</a>
+				<a href="Nosotros.html">Nosotros</a>
+			</div>
+			
+			<div class="productos">
+				<form>
+					<input type="text" placeholder="Buscar productos...">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+			
+			<div class="inicio-sesion">
+				<a href="InicioSesion.html">Iniciar sesi&oacute;n</a>
+				<button><a href="Registro.html">Registrarse</a></button>
+				<button><a href="carrito_de_compras.html">Mis Compras</a></button>
+			</div>
+		</header>
+		<div class="cuerpo_producto">
+			<div class="filtro_producto">
+				<form action="productos.html">
+					<h4>Filtrar productos</h4>
+					<hr width="200" align="left" /><h4>Marca</h4>
+					<input type="checkbox" name="marca" value="sony"/>Sony
+					<br/><input type="checkbox" name="marca" value="samsung"/>Samsung
+					<br/><input type="checkbox" name="marca" value="phillips"/>Phillips
+					<br/><input type="checkbox" name="marca" value="microdoft"/>Microsoft
+					<br/><input type="checkbox" name="marca" value="lenovo"/>Lenovo
+					<br/><input type="checkbox" name="marca" value="teros"/>Teros
+					<hr width="200" align="left" /><h4>Precio</h4>
+					<br/><input type="radio" name="precio" value="precio_1"/>S/.0 - S/.500
+					<br/><input type="radio" name="precio" value="precio_2"/>S/.500 - S/.1000
+					<br/><input type="radio" name="precio" value="precio_3"/>S/.1000 - S/.3000
+					<br/><input type="radio" name="precio" value="precio_4"/>S/.3000 - S/.5000
+					<br/><input type="radio" name="precio" value="precio_5"/>S/.5000 - S/.10000
+					<hr width="200" align="left" /><h4>Tipo</h4>
+					<br/><input type="checkbox" name="precio" value="pc"/>PCs
+					<br/><input type="checkbox" name="precio" value="celular"/>Celulares
+					<br/><input type="checkbox" name="precio" value="tablet"/>Tablets
+					<br/><input type="checkbox" name="precio" value="audifono"/>Audifonos
+					<br/><input type="checkbox" name="precio" value="consola"/>Consolas
+					<hr width="200" align="left" /><h4>Orden</h4>
+					<br/><input type="radio" name="precio" value="precio_1"/>Precio de menor a mayor
+					<br/><input type="radio" name="precio" value="precio_2"/>Precio de mayor a menor
+					<br/><input type="radio" name="precio" value="precio_3"/>Recomendados
+					<hr width="200" align="left" /><input type="submit" value="Filtrar">
+				</form>
+			</div>
+			<div class="lista_productos">
+				<ul class="enlistado">
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 1</h3>
+						<p>Breve descripcion de producto 1</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 2</h3>
+						<p>Breve descripcion de producto 2</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 3</h3>
+						<p>Breve descripcion de producto 3</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 4</h3>
+						<p>Breve descripcion de producto 4</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 5</h3>
+						<p>Breve descripcion de producto 5</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 6</h3>
+						<p>Breve descripcion de producto 6</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 7</h3>
+						<p>Breve descripcion de producto 7</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 8</h3>
+						<p>Breve descripcion de producto 8</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 9</h3>
+						<p>Breve descripcion de producto 9</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 10</h3>
+						<p>Breve descripcion de producto 10</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 11</h3>
+						<p>Breve descripcion de producto 11</p>
+					</li>
+					<li>
+						<img src="imagenes/ejemplo.png">
+						<h3>Producto 12</h3>
+						<p>Breve descripcion de producto 12</p>
+					</li>
+				</ul>
+			</div>
+			<div class="publicidad">
+				<img src="imagenes/publicidad.jpg">
+			</div>
+		</div>
+		<footer>
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-facebook"></i><img src="imagenes/facebook.png"></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i><img src="imagenes/instagram.png"></a>
+				<a href="#"><i class="fa fa-youtube"></i></a>
+			</div>
+
+			<div class="terms">
+				<a href="#">Términos y condiciones</a> | <a href="#">Nuestras políticas</a>
+			</div>
+			<p>&copy; TECHTONIC 2023 Todos los derechos reservados. Designed by LEDS</p>
+		</footer>
+	</body>
+</html>
