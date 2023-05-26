@@ -1,9 +1,8 @@
-<html>
+<html >
 	<head>
 		<title>TECHTONIC</title>
 		<style>
-		/* Estilos para la cabecera */
-			
+		/* Estilos para la cabecera */	
 			header {
 				display: flex;
 				justify-content: space-between;
@@ -17,7 +16,6 @@
 				display: flex;
 				align-items: center;
 				font-size: 24px;
-				font-weight: bold;
 				text-transform: uppercase;
 				width: 150px
 			}
@@ -29,28 +27,22 @@
 
 			.menu a {
 				margin: 0 20px;
-				padding: 20px 20px;
+				margin-right: auto;
+				padding: 5px 5px;
 				text-decoration: none;
-				color: #4e4b4b;
-				font-family: Arial, Helvetica, sans-serif;
-				font-weight: bolder;
-				font-size: larger;
+				color: #242323;
 			}
 
 			.menu a:hover {
 				background: #927fb8f3;
-				color: #413e3e;
+				color: whitesmoke;
 			}
 
 			.productos {
 				display: flex;
 				align-items: center;
-				margin: 0 30px ;
-			}
-
-			.productos form{
-				display: flex;
-				margin-bottom: auto;
+				margin-top: auto;
+				-webkit-text-size-adjust: 100%;
 			}
 
 			.productos input[type="text"] {
@@ -59,7 +51,7 @@
 				margin-right: 10px;
 				font-size: 14px;
 				border-radius: 5px;
-				width: 600px;
+				width: 300px;
 			}
 
 			.productos input[type="submit"] {
@@ -70,9 +62,6 @@
 				font-size: 14px;
 				border-radius: 5px;
 				cursor: pointer;
-				font-weight: 400;
-				font-family: Arial, Helvetica, sans-serif;
-				font-size: large;
 			}
 
 			.productos input[type="submit"]:hover{
@@ -85,24 +74,161 @@
 			}
 
 			.inicio-sesion a {
-				margin: 5px;
+				margin: 0 20px;
+				margin-right: auto;
 				text-decoration: none;
 				text-align: center;
-				color: #4e4b4b;
-				font-family: Arial, Helvetica, sans-serif;
-				font-weight: bolder;
-				font-size: larger;
-				padding: 20px 20px;
+				color: #242323;
+				padding: 5px 5px;
 			}
 
 			.inicio-sesion a:hover{
 				background: #927fb8f3;
-				color: #413e3e;			
+				color: whitesmoke;			
+			}
+
+		/* Estilos para cabecera movil */
+			.cabecera_movil{
+				display: none;
+				width: 100%;
+				background-color: #9789b3f3;
+				flex-direction: column;
+			}
+
+			.logo_menu{
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.logo_menu .menu_movil button{
+				margin-left: 8px;
+				background-color: #9789b3f3;
+				cursor: pointer;
+				border: none;
+			}
+
+			.logo_menu .menu_movil button img{
+				width: 40px;
+			}
+
+			.logo_menu .menu_movil ul{
+				display: none;
+				position: absolute;
+				background: #b0a5b8;
+				padding: 3px;
+				margin-top: 20px;
+				top: 37px;
+			}
+
+			.logo_menu .menu_movil ul li{
+				list-style: none;
+				margin: 6px;
+				padding: 10px;
+			}
+
+			.logo_menu .menu_movil ul li a{
+				text-decoration: none;
+			}
+
+			.menu_movil ul li img{
+				width: 10px;
+				float: right;
+				cursor: pointer;
+			}
+
+			.logo_movil{
+				width: 100%;
+			}
+
+			.logo_movil img{
+				width: 100px;
+			}
+
+			.inicio_sesion_movil{
+				width: 100%;
+			}
+
+			.inicio_sesion_movil button{
+				float: right;
+				margin-top: 10px;
+				margin-right: 8px;
+				border-radius: 4px;
+				background-color: #735e9ef3;
+				padding: 6px 14px;
+				font-size: 12px;
+				border: none;
+				cursor: pointer;
+			}
+
+			.logo_menu .inicio_sesion_movil ul{
+				display: none;
+				position: absolute;
+				background: #b0a5b8;
+				padding: 11px;
+				margin-top: 16px;
+				right: 16px;
+				top: 29px;
+			}
+
+			.logo_menu .inicio_sesion_movil ul li{
+				list-style: none;
+				padding: 10px;
+			}
+
+			.inicio_sesion_movil ul li img{
+				width: 10px;
+				float: right;
+				cursor: pointer;
+			}
+
+			.logo_menu .inicio_sesion_movil ul li a{
+				text-decoration: none;
+			}
+
+			.buscador_movil{
+				width: 100%;
+			}
+
+			.buscador_movil form{
+				margin: 3px;
+			}
+
+			.buscador_movil input[type="text"]{
+				border: none;
+				padding: 8px;
+				margin-top: 3px;
+				margin-left: 8px;
+				margin-right: 8px;
+				font-size: 14px;
+				border-radius: 5px;
+				width: 97%;
+			}
+
+			.buscador_movil input[type="submit"]{
+				margin: 8px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				padding: 8px 14px;
+				font-size: 14px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			@media only screen and (max-width: 1046px){
+				header{
+					display: none;
+				}
+
+				.cabecera_movil{
+					display: flex;
+				}
+
 			}
 
 		/* Estilos para el main */
 			main {
-				background: rgb(182, 165, 182);
+				background: rgb(226, 223, 226);
 			}
 			.banner img {
 				width: 100%;
@@ -132,25 +258,59 @@
 				text-decoration-line: underline;
 			}
 
+			@media only screen and (max-width: 1250px){
+				.accesos_rapidos{
+					flex-direction: column;
+				}
+
+			}
+			
 			.slide_oferta img {
 				width: 100%;
 				height: auto;
 				padding: 2px;
 			}
+
 			.carrusel {
 				display: flex;
 				justify-content: space-between;
 				padding: 20px;
 				text-align: center;
 			}
+
+			.carrusel a{
+				color: rgb(54, 53, 53);
+				text-decoration: none;
+			}
+
+			.carrusel a img{
+				width: 200px;
+			}
+
+			.carrusel a:hover{
+				text-decoration: underline;
+			}
+
+			.carrusel a img:hover{
+				width: 205px;
+				filter: brightness(90%);
+			}
+
+			@media only screen and (max-width: 950px){
+				.carrusel{
+					flex-direction: column;
+				}
+				
+			}
+
 		/* Estilos para el footer */
 			footer {
 				background-color: #7e7683;
 				padding: 20px;
-				margin-top: 50px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
 			}
 
 			.social-icons {
@@ -175,9 +335,15 @@
 			.terms {
 				margin-bottom: 10px;
 			}
+
+			.social-icons a img:hover{
+				width: 31px;
+				height: 31px;
+			}
 		</style>
 	</head>
 	<body>
+		<!-- Cabecera de la pagina -->
 		<header>
 			<div class="logo">
 				<img src="Imagenes/logo.png">
@@ -197,11 +363,52 @@
 			</div>
 			
 			<div class="inicio-sesion">
-				<a href="InicioSesion.html">Iniciar sesi&oacute;n</a>
-				<a href="Registro.html">Registrarse</a>
+				<a href="InicioSesion.html">Iniciar sesi&oacute;n</a> |
+				<a href="Registro.html">Registrarse</a> |
 				<a href="carrito_de_compras.html">Mis Compras</a>
 			</div>
 		</header>
+
+		<!-- Cabecera de la pagina movil -->
+		<div class="cabecera_movil">
+			<div class="logo_menu">
+				<div class="menu_movil">
+					<button onclick="mostrarMenuMovil();">
+						<img src="imagenes/menu_movil.png">
+					</button>
+					<ul id="menu_lista">
+						<li onclick="ocultarMenuMovil();">
+							<img src="imagenes/close.png"/>
+						</li>
+						<li><a href="inicio.html">Inicio</a></li>
+						<li><a href="Nosotros.html">Nosotros</a></li>
+						<li><a href="productos.html">Productos</a></li>
+					</ul>
+				</div>
+				<div class="logo_movil">
+					<img src="imagenes/logo.png">
+				</div>
+				<div class="inicio_sesion_movil">
+					<button onclick="mostrarSesionMovil();">Inicia sesion</button>
+					<ul id="sesion_lista">
+						<li onclick="ocultarSesionMovil();">
+							<img src="imagenes/close.png">
+						</li>
+						<li><a href="InicioSesion.html">Iniciar sesi&oacute;n</a></li>
+						<li><a href="Registro.html">Registrarse</a></li>
+						<li><a href="carrito_de_compras.html">Mis Compras</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="buscador_movil">
+				<form>
+					<input type="text" placeholder="Buscar productos...">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+		</div>
+
+		<!-- Contenido pricipal de la pagina -->
 		<main>
 			<div class="banner">
 				<img src="imagenes/banner.png">
@@ -236,19 +443,27 @@
 			<h2><center>Productos destacados</center></h2>
 			<div class="carrusel">
 				<div class="imagen_carrusel1">
-					<img src="imagenes/producto1.jpg" width="200px">
-					<h3>PlayStation 5 Consola (con ranura de disco)</h3>
+					<a href="descripcion_producto.html">
+						<img src="imagenes/producto1.jpg">
+						<h4>PlayStation 5 Consola (con ranura de disco)</h4>
+					</a>
 				</div>
 				<div class="imagen_carrusel2">
-					<img src="imagenes/producto2.jpg" width="200px">
-					<h3>SAMSUNG-GALAXY-A20-32GB-AZUL_1 – Grupo Lucero</h3>
+					<a href="descripcion_producto.html">
+						<img src="imagenes/producto2.jpg">
+						<h4>SAMSUNG-GALAXY-A20-32GB-AZUL_1 – Grupo Lucero</h4>
+					</a>
 				</div>
 				<div class="imagen_carrusel3">
-					<img src="imagenes/producto3.jpg" width="200px">
-					<h3>AUDIFONO BLUETOOTH PHILIPS SHB1700 – MULTICEL PERU</h3>
+					<a href="descripcion_producto.html">
+						<img src="imagenes/producto3.jpg">
+						<h4>AUDIFONO BLUETOOTH PHILIPS SHB1700 – MULTICEL PERU</h4>
+					</a>
 				</div>
 			</div>
 		</main>
+
+		<!-- Pie de pagina -->
 		<footer>
 			<div class="social-icons">
 				<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img src="imagenes/facebook.png"></a>
@@ -263,4 +478,25 @@
 			<p>&copy; TECHTONIC 2023 Todos los derechos reservados. Designed by LEDS</p>
 		</footer>
 	</body>
+
+	<!-- javascript para las funcionalidades de la pagina -->
+	<script>
+		/*Funciones para el menu movil*/
+		function mostrarMenuMovil(){
+			document.getElementById('menu_lista').style.display = 'block';
+		}
+
+		function ocultarMenuMovil(){
+			document.getElementById('menu_lista').style.display = 'none';
+		}
+
+		/*Funciones para inicio de sesion movil*/
+		function mostrarSesionMovil(){
+			document.getElementById('sesion_lista').style.display = 'block';
+		}
+
+		function ocultarSesionMovil(){
+			document.getElementById('sesion_lista').style.display = 'none';
+		}
+	</script>
 </html>
