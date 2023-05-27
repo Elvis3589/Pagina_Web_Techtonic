@@ -8,16 +8,18 @@
 				justify-content: space-between;
 				align-items: center;
 				padding: 20px;
-				background-color: #9789b3f3;
+				background-color: #f8f8f8;
 				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 			}
 		
 			.logo img{
 				display: flex;
+				color: #b0a5b8;
 				align-items: center;
 				font-size: 24px;
+				padding: 0 2px;
 				text-transform: uppercase;
-				width: 150px
+				width: 250px
 			}
 			
 			.menu {
@@ -34,19 +36,19 @@
 			}
 
 			.menu a:hover {
-				background: #927fb8f3;
+				background: #333;
 				color: whitesmoke;
 			}
 
 			.productos {
 				display: flex;
 				align-items: center;
-				margin-top: auto;
+				margin-top: 10px;
 				-webkit-text-size-adjust: 100%;
 			}
 
 			.productos input[type="text"] {
-				border: none;
+				border-style: ridge;
 				padding: 8px;
 				margin-right: 10px;
 				font-size: 14px;
@@ -83,7 +85,7 @@
 			}
 
 			.inicio-sesion a:hover{
-				background: #927fb8f3;
+				background: #333;
 				color: whitesmoke;			
 			}
 
@@ -91,7 +93,7 @@
 			.cabecera_movil{
 				display: none;
 				width: 100%;
-				background-color: #9789b3f3;
+				background-color: #f8f8f8;
 				flex-direction: column;
 			}
 
@@ -102,9 +104,10 @@
 
 			.logo_menu .menu_movil button{
 				margin-left: 8px;
-				background-color: #9789b3f3;
+				background-color: #f8f8f8;
 				cursor: pointer;
 				border: none;
+				margin-top: 14px;
 			}
 
 			.logo_menu .menu_movil button img{
@@ -114,10 +117,10 @@
 			.logo_menu .menu_movil ul{
 				display: none;
 				position: absolute;
-				background: #b0a5b8;
+				background: #d6d5d5;
 				padding: 3px;
 				margin-top: 20px;
-				top: 37px;
+				top: 47px;
 			}
 
 			.logo_menu .menu_movil ul li{
@@ -141,7 +144,7 @@
 			}
 
 			.logo_movil img{
-				width: 100px;
+				width: 200px;
 			}
 
 			.inicio_sesion_movil{
@@ -153,7 +156,8 @@
 				margin-top: 10px;
 				margin-right: 8px;
 				border-radius: 4px;
-				background-color: #735e9ef3;
+				background-color: #333;
+				color: #fff;
 				padding: 6px 14px;
 				font-size: 12px;
 				border: none;
@@ -163,7 +167,7 @@
 			.logo_menu .inicio_sesion_movil ul{
 				display: none;
 				position: absolute;
-				background: #b0a5b8;
+				background: #d6d5d5;
 				padding: 11px;
 				margin-top: 16px;
 				right: 16px;
@@ -194,7 +198,7 @@
 			}
 
 			.buscador_movil input[type="text"]{
-				border: none;
+				border-style: ridge;
 				padding: 8px;
 				margin-top: 3px;
 				margin-left: 8px;
@@ -305,7 +309,7 @@
 
 		/* Estilos para el footer */
 			footer {
-				background-color: #7e7683;
+				background-color: #9b9b9b;
 				padding: 20px;
 				display: flex;
 				flex-direction: column;
@@ -346,7 +350,7 @@
 		<!-- Cabecera de la pagina -->
 		<header>
 			<div class="logo">
-				<img src="Imagenes/logo.png">
+				<img src="Imagenes/logo5.png">
 			</div>
 
 			<div class="menu">
@@ -374,7 +378,7 @@
 			<div class="logo_menu">
 				<div class="menu_movil">
 					<button onclick="mostrarMenuMovil();">
-						<img src="imagenes/menu_movil.png">
+						<img src="imagenes/menu_movil2.png">
 					</button>
 					<ul id="menu_lista">
 						<li onclick="ocultarMenuMovil();">
@@ -386,7 +390,7 @@
 					</ul>
 				</div>
 				<div class="logo_movil">
-					<img src="imagenes/logo.png">
+					<img src="imagenes/logo5.png">
 				</div>
 				<div class="inicio_sesion_movil">
 					<button onclick="mostrarSesionMovil();">Inicia sesion</button>
