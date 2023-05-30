@@ -4,22 +4,23 @@
 		<style>
 		/* Estilos para la cabecera */
 			
-			header {
+		header {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				padding: 20px;
 				background-color: #f8f8f8;
-				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 			}
 		
 			.logo img{
 				display: flex;
+				color: #b0a5b8;
 				align-items: center;
 				font-size: 24px;
-				font-weight: bold;
+				padding: 0 2px;
 				text-transform: uppercase;
-				width: 150px
+				width: 250px
 			}
 			
 			.menu {
@@ -28,22 +29,32 @@
 			}
 
 			.menu a {
-				margin: 0 10px;
+				margin: 0 20px;
+				margin-right: auto;
+				padding: 5px 5px;
 				text-decoration: none;
-				color: #333;
+				color: #242323;
+			}
+
+			.menu a:hover {
+				background: #333;
+				color: whitesmoke;
 			}
 
 			.productos {
 				display: flex;
 				align-items: center;
+				margin-top: 10px;
+				-webkit-text-size-adjust: 100%;
 			}
 
 			.productos input[type="text"] {
-				border: none;
+				border-style: ridge;
 				padding: 8px;
 				margin-right: 10px;
 				font-size: 14px;
 				border-radius: 5px;
+				width: 300px;
 			}
 
 			.productos input[type="submit"] {
@@ -55,6 +66,10 @@
 				border-radius: 5px;
 				cursor: pointer;
 			}
+
+			.productos input[type="submit"]:hover{
+				background-color: rgb(34, 34, 34);
+			}
 	
 			.inicio-sesion {
 				display: flex;
@@ -62,25 +77,159 @@
 			}
 
 			.inicio-sesion a {
-				margin-right: 10px;
+				margin: 0 20px;
+				margin-right: auto;
 				text-decoration: none;
-				color: #333;
+				text-align: center;
+				color: #242323;
+				padding: 5px 5px;
 			}
 
-			.inicio-sesion button {
-				background-color: #333;
+			.inicio-sesion a:hover{
+				background: #333;
+				color: whitesmoke;			
+			}
+
+		/* Estilos para cabecera movil */
+			.cabecera_movil{
+				display: none;
+				width: 100%;
+				background-color: #f8f8f8;
+				flex-direction: column;
+			}
+
+			.logo_menu{
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.logo_menu .menu_movil button{
+				margin-left: 8px;
+				background-color: #f8f8f8;
+				cursor: pointer;
 				border: none;
-				padding: 8px 16px;
+				margin-top: 14px;
+			}
+
+			.logo_menu .menu_movil button img{
+				width: 40px;
+			}
+
+			.logo_menu .menu_movil ul{
+				display: none;
+				position: absolute;
+				background: #d6d5d5;
+				padding: 3px;
+				margin-top: 20px;
+				top: 47px;
+			}
+
+			.logo_menu .menu_movil ul li{
+				list-style: none;
+				margin: 6px;
+				padding: 10px;
+			}
+
+			.logo_menu .menu_movil ul li a{
+				text-decoration: none;
+			}
+
+			.menu_movil ul li img{
+				width: 10px;
+				float: right;
+				cursor: pointer;
+			}
+
+			.logo_movil{
+				width: 100%;
+			}
+
+			.logo_movil img{
+				width: 200px;
+			}
+
+			.inicio_sesion_movil{
+				width: 100%;
+			}
+
+			.inicio_sesion_movil button{
+				float: right;
+				margin-top: 10px;
+				margin-right: 8px;
+				border-radius: 4px;
+				background-color: #333;
+				color: #fff;
+				padding: 6px 14px;
+				font-size: 12px;
+				border: none;
+				cursor: pointer;
+			}
+
+			.logo_menu .inicio_sesion_movil ul{
+				display: none;
+				position: absolute;
+				background: #d6d5d5;
+				padding: 11px;
+				margin-top: 16px;
+				right: 16px;
+				top: 29px;
+			}
+
+			.logo_menu .inicio_sesion_movil ul li{
+				list-style: none;
+				padding: 10px;
+			}
+
+			.inicio_sesion_movil ul li img{
+				width: 10px;
+				float: right;
+				cursor: pointer;
+			}
+
+			.logo_menu .inicio_sesion_movil ul li a{
+				text-decoration: none;
+			}
+
+			.buscador_movil{
+				width: 100%;
+			}
+
+			.buscador_movil form{
+				margin: 3px;
+			}
+
+			.buscador_movil input[type="text"]{
+				border-style: ridge;
+				padding: 8px;
+				margin-top: 3px;
+				margin-left: 8px;
+				margin-right: 8px;
+				font-size: 14px;
+				border-radius: 5px;
+				width: 97%;
+			}
+
+			.buscador_movil input[type="submit"]{
+				margin: 8px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				padding: 8px 14px;
 				font-size: 14px;
 				border-radius: 5px;
 				cursor: pointer;
 			}
-			.inicio-sesion button a {
-				color: #fff;
+
+			@media only screen and (max-width: 1046px){
+				header{
+					display: none;
 				}
-				
-			
-			
+
+				.cabecera_movil{
+					display: flex;
+				}
+			}
+		
 		/* Estilos para el formulario de inicio de sesión */
 			.InicioSesion form {
 				display: flex;
@@ -116,13 +265,13 @@
 				cursor: pointer;
 			}
 		/* Estilos para el footer */
-			footer {
-				background-color: #f2f2f2;
+		footer {
+				background-color: #9b9b9b;
 				padding: 20px;
-				margin-top: 50px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
 			}
 
 			.social-icons {
@@ -136,7 +285,6 @@
 				display: inline-block;
 				width: 30px;
 				height: 30px;
-				background-color: #333;
 				color: #fff;
 				font-size: 20px;
 				border-radius: 50%;
@@ -148,17 +296,24 @@
 			.terms {
 				margin-bottom: 10px;
 			}
+
+			.social-icons a img:hover{
+				width: 31px;
+				height: 31px;
+			}
 		</style>
 	</head>
 	<body>
+		<!-- Cabecera de la pagina -->
 		<header>
 			<div class="logo">
-				<img src="Imagenes/logo.png">
+				<img src="Imagenes/logo5.png">
 			</div>
 
 			<div class="menu">
 				<a href="inicio.html">Inicio</a>
 				<a href="Nosotros.html">Nosotros</a>
+				<a href="productos.html">Productos</a>
 			</div>
 			
 			<div class="productos">
@@ -169,12 +324,52 @@
 			</div>
 			
 			<div class="inicio-sesion">
-				<a href="InicioSesion.html">Iniciar sesi&oacute;n</a>
-				<button><a href="Registro.html">Registrarse</a></button>
-				<button><a href="carrito_de_compras.html">Mis Compras</a></button>
+				<a href="InicioSesion.html">Iniciar sesi&oacute;n</a> |
+				<a href="Registro.html">Registrarse</a> |
+				<a href="carrito_de_compras.html">Mis Compras</a>
 			</div>
 		</header>
-		
+
+		<!-- Cabecera de la pagina movil -->
+		<div class="cabecera_movil">
+			<div class="logo_menu">
+				<div class="menu_movil">
+					<button onclick="mostrarMenuMovil();">
+						<img src="imagenes/menu_movil2.png">
+					</button>
+					<ul id="menu_lista">
+						<li onclick="ocultarMenuMovil();">
+							<img src="imagenes/close.png"/>
+						</li>
+						<li><a href="inicio.html">Inicio</a></li>
+						<li><a href="Nosotros.html">Nosotros</a></li>
+						<li><a href="productos.html">Productos</a></li>
+					</ul>
+				</div>
+				<div class="logo_movil">
+					<img src="imagenes/logo5.png">
+				</div>
+				<div class="inicio_sesion_movil">
+					<button onclick="mostrarSesionMovil();">Inicia sesion</button>
+					<ul id="sesion_lista">
+						<li onclick="ocultarSesionMovil();">
+							<img src="imagenes/close.png">
+						</li>
+						<li><a href="InicioSesion.html">Iniciar sesi&oacute;n</a></li>
+						<li><a href="Registro.html">Registrarse</a></li>
+						<li><a href="carrito_de_compras.html">Mis Compras</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="buscador_movil">
+				<form>
+					<input type="text" placeholder="Buscar productos...">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+		</div>
+
+		<!-- Contenido pricipal de la pagina -->
 		<div class="InicioSesion">
 			<form>
 				<h2>Iniciar sesi&oacute;n</h2>
@@ -189,11 +384,13 @@
 				<input type="submit" href="Registro.html" value="Registrarse">
 			</form>
 		</div>
+
+		<!-- Pie de pagina -->
 		<footer>
 			<div class="social-icons">
-				<a href="#"><i class="fa fa-facebook"></i><img src="imagenes/facebook.png"></a>
+				<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img src="imagenes/facebook.png"></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i><img src="imagenes/instagram.png"></a>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i><img src="imagenes/instagram.png"></a>
 				<a href="#"><i class="fa fa-youtube"></i></a>
 			</div>
 
@@ -203,4 +400,25 @@
 			<p>&copy; TECHTONIC 2023 Todos los derechos reservados. Designed by LEDS</p>
 		</footer>
 	</body>
+
+	<!-- javascript para las funcionalidades de la pagina -->
+	<script>
+		/*Funciones para el menu movil*/
+		function mostrarMenuMovil(){
+			document.getElementById('menu_lista').style.display = 'block';
+		}
+
+		function ocultarMenuMovil(){
+			document.getElementById('menu_lista').style.display = 'none';
+		}
+
+		/*Funciones para inicio de sesion movil*/
+		function mostrarSesionMovil(){
+			document.getElementById('sesion_lista').style.display = 'block';
+		}
+
+		function ocultarSesionMovil(){
+			document.getElementById('sesion_lista').style.display = 'none';
+		}
+	</script>
 </html>

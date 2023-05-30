@@ -238,24 +238,50 @@
 				justify-content: space-between;
 			}
 
+			.cuerpo_producto .filtro_producto{
+				width: 15%;
+			}
+
+			.filtro_producto form{
+				padding-top: 30px;
+			}
+
 			.lista_productos {
+				width: 100%;
 				display: flex;
+				background-color: #dfdede;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 				flex-wrap: wrap;
 				justify-content: space-between;
+				border-radius: 1%;
+				align-items: center;
+				margin: 40px 40px;
+				padding: 30px 80px;
 			}
 
-			.enlistado li {
-				width: calc(33.33% - 10px);
-				margin-bottom: 20px;
-				list-style: none;
-				padding: 10px;
-				box-sizing: border-box;
-				border: 1px solid #ccc;
+			.lista_productos .producto_articulo{
+				width: 22%;
+				padding: 30px;
+			}
+
+			.lista_productos .producto_articulo img{
+				width: 100%;
+			}
+
+			.lista_productos .producto_articulo a{
+				text-decoration: none;
 				text-align: center;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				color: #333232;
 			}
 
-			.enlistado li img{
-				width: 100px;
+			.cuerpo_producto .publicidad{
+				width: 20%;
+			}
+
+			.publicidad img{
+				width: 100%;
+				padding-top: 300px;
 			}
 			
 		/* Estilos para el footer */
@@ -365,98 +391,126 @@
 		<!-- Contenido pricipal de la pagina -->
 		<div class="cuerpo_producto">
 			<div class="filtro_producto">
-				<form action="productos.html">
+				<form method="post">
 					<h4>Filtrar productos</h4>
 					<hr width="200" align="left" /><h4>Marca</h4>
-					<input type="checkbox" name="marca" value="sony"/>Sony
-					<br/><input type="checkbox" name="marca" value="samsung"/>Samsung
-					<br/><input type="checkbox" name="marca" value="phillips"/>Phillips
-					<br/><input type="checkbox" name="marca" value="microdoft"/>Microsoft
-					<br/><input type="checkbox" name="marca" value="lenovo"/>Lenovo
-					<br/><input type="checkbox" name="marca" value="teros"/>Teros
+					<input type="checkbox" id="marca1" value="sony"/>Sony
+					<br/><input type="checkbox" id="marca2" value="samsung"/>Samsung
+					<br/><input type="checkbox" id="marca3" value="phillips"/>Phillips
+					<br/><input type="checkbox" id="marca4" value="microdoft"/>Microsoft
+					<br/><input type="checkbox" id="marca5" value="lenovo"/>Lenovo
+					<br/><input type="checkbox" id="marca6" value="teros"/>Teros
 					<hr width="200" align="left" /><h4>Precio</h4>
-					<br/><input type="radio" name="precio" value="precio_1"/>S/.0 - S/.500
-					<br/><input type="radio" name="precio" value="precio_2"/>S/.500 - S/.1000
-					<br/><input type="radio" name="precio" value="precio_3"/>S/.1000 - S/.3000
-					<br/><input type="radio" name="precio" value="precio_4"/>S/.3000 - S/.5000
-					<br/><input type="radio" name="precio" value="precio_5"/>S/.5000 - S/.10000
+					<br/><input type="radio" id="precio1" value="precio_1"/>S/.0 - S/.500
+					<br/><input type="radio" id="precio2" value="precio_2"/>S/.500 - S/.1000
+					<br/><input type="radio" id="precio3" value="precio_3"/>S/.1000 - S/.3000
+					<br/><input type="radio" id="precio4" value="precio_4"/>S/.3000 - S/.5000
+					<br/><input type="radio" id="precio5" value="precio_5"/>S/.5000 - S/.10000
 					<hr width="200" align="left" /><h4>Tipo</h4>
-					<br/><input type="checkbox" name="precio" value="pc"/>PCs
-					<br/><input type="checkbox" name="precio" value="celular"/>Celulares
-					<br/><input type="checkbox" name="precio" value="tablet"/>Tablets
-					<br/><input type="checkbox" name="precio" value="audifono"/>Audifonos
-					<br/><input type="checkbox" name="precio" value="consola"/>Consolas
+					<br/><input type="checkbox" id="pcs" value="pc"/>PCs
+					<br/><input type="checkbox" id="celulares" value="celular"/>Celulares
+					<br/><input type="checkbox" id="tablets" value="tablet"/>Tablets
+					<br/><input type="checkbox" id="audifonos" value="audifono"/>Audifonos
+					<br/><input type="checkbox" id="consolas" value="consola"/>Consolas
 					<hr width="200" align="left" /><h4>Orden</h4>
-					<br/><input type="radio" name="precio" value="precio_1"/>Precio de menor a mayor
-					<br/><input type="radio" name="precio" value="precio_2"/>Precio de mayor a menor
-					<br/><input type="radio" name="precio" value="precio_3"/>Recomendados
+					<br/><input type="radio" id="ordenprecio1" value="precio_1"/>Precio de menor a mayor
+					<br/><input type="radio" id="ordenprecio2" value="precio_2"/>Precio de mayor a menor
+					<br/><input type="radio" id="ordenprecio3" value="precio_3"/>Recomendados
 					<hr width="200" align="left" /><input type="submit" value="Filtrar">
 				</form>
 			</div>
-			<div class="lista_productos">
-				<ul class="enlistado">
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 1</h3>
-						<p>Breve descripcion de producto 1</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 2</h3>
-						<p>Breve descripcion de producto 2</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 3</h3>
-						<p>Breve descripcion de producto 3</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 4</h3>
-						<p>Breve descripcion de producto 4</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 5</h3>
-						<p>Breve descripcion de producto 5</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 6</h3>
-						<p>Breve descripcion de producto 6</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 7</h3>
-						<p>Breve descripcion de producto 7</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 8</h3>
-						<p>Breve descripcion de producto 8</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 9</h3>
-						<p>Breve descripcion de producto 9</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 10</h3>
-						<p>Breve descripcion de producto 10</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 11</h3>
-						<p>Breve descripcion de producto 11</p>
-					</li>
-					<li>
-						<img src="imagenes/ejemplo.png">
-						<h3>Producto 12</h3>
-						<p>Breve descripcion de producto 12</p>
-					</li>
-				</ul>
-			</div>
+			<section class="lista_productos" id="lista_producto">
+				<div class="producto_articulo" id="pcs">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/pc_corei3.png"/>
+						<h3>PC - Core i3</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="pcs">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/pc_corei5.png"/>
+						<h3>PC - Core i5</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="pcs">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/pc_corei7.png"/>
+						<h3>PC - Core i7</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="tablets">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/tablet_lenovo.png"/>
+						<h3>Tablet - Lenovo</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="tablets">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/tablet_pixel.png"/>
+						<h3>Tablet - Pixel</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="tablets">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/tablet_xiaomi.png"/>
+						<h3>Tablet - Xiaomi</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="celulares">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/celular_redmi.png"/>
+						<h3>Celular - Redmi</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="celulares">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/celular_samsung.png"/>
+						<h3>Celular - Samsung</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="celulares">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/iphone_13.png"/>
+						<h3>Celular - Iphone 13</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="consolas">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/ps5.png"/>
+						<h3>PS5 - Sony - Lector</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="consolas">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/xbox.jpg"/>
+						<h3>Xbox - Microsoft - Series X</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="consolas">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/nintendo.jpeg"/>
+						<h3>Switch - Nintendo - Portatil</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="audifonos">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/audifono_coby.png"/>
+						<h3>Audifono - Coby</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="audifonos">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/audifono_sennheiser.png"/>
+						<h3>Audifono - Sennheiser</h3>
+					</a>
+				</div>
+				<div class="producto_articulo" id="audifonos">
+					<a href="descripcion_producto.html">
+						<img src="imagenes/productos/audifono_xtech.png"/>
+						<h3>Audifono - Xtech</h3>
+					</a>
+				</div>
+			</section>
 			<div class="publicidad">
 				<img src="imagenes/publicidad.jpg">
 			</div>
@@ -496,6 +550,10 @@
 
 		function ocultarSesionMovil(){
 			document.getElementById('sesion_lista').style.display = 'none';
+		}
+
+		function mostrarProductosSeleccionado(){
+
 		}
 	</script>
 </html>
